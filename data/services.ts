@@ -1,5 +1,5 @@
 
-import { ServiceData, HeroStyle, ProcessStyle } from '../types';
+import { ServiceData, HeroStyle, ProcessStyle } from '../types.ts';
 
 export const ALL_SERVICES: ServiceData[] = [
   {

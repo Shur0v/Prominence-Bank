@@ -1,9 +1,9 @@
 
 import React from 'react';
-import { ServiceData, ProcessStyle } from '../types';
-import { getIcon } from '../constants';
+import { ServiceData, ProcessStyle } from '../types.ts';
+import { getIcon } from '../constants.tsx';
 import { ChevronRight, Shield, CheckCircle2, HelpCircle, Globe, ArrowRight, Minus } from 'lucide-react';
-import { ALL_SERVICES } from '../data/services';
+import { ALL_SERVICES } from '../data/services.ts';
 
 interface Props {
   service: ServiceData;
@@ -217,7 +217,7 @@ const FAQGrid: React.FC<Props> = ({ service }) => (
         <p className="text-gray-700 leading-relaxed mb-6 font-bold text-sm">{f.answer}</p>
         <div className="flex flex-wrap gap-2">
           {f.tags.map((tag, j) => (
-            <span key={j} className="text-[9px] uppercase tracking-widest text-brand font-black bg-gray-100 px-3 py-1 border border-gray-200 rounded">
+            <span key={j} className="text-[9px] uppercase tracking-widest text-brand font-black bg-gray-100 px-3 py-1 border border-gray-100 rounded">
               {tag.trim()}
             </span>
           ))}

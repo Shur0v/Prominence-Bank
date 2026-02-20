@@ -1,10 +1,10 @@
 
 import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, useParams, Navigate, Link } from 'react-router-dom';
-import { Header, Footer } from './components/Layout';
-import { ServicePage } from './components/ServicePage';
-import { ALL_SERVICES } from './data/services';
-import { getIcon } from './constants';
+import { Header, Footer } from './components/Layout.tsx';
+import { ServicePage } from './components/ServicePage.tsx';
+import { ALL_SERVICES } from './data/services.ts';
+import { getIcon } from './constants.tsx';
 import { ArrowRight } from 'lucide-react';
 
 const HomePage: React.FC = () => {

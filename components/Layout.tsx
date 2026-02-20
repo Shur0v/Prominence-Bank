@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ALL_SERVICES } from '../data/services';
-import { LOGO_URL } from '../constants';
+import { ALL_SERVICES } from '../data/services.ts';
+import { LOGO_URL } from '../constants.tsx';
 import { Menu, X, ChevronDown, Phone, Mail, Globe } from 'lucide-react';
 
 export const Header: React.FC = () => {
